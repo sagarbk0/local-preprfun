@@ -1,0 +1,66 @@
+<!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+<head>
+  <%- include('layouts/navbar'); -%>
+  <link href="css/styles.css" rel="stylesheet" />
+  <br><br><br><br>
+  <link rel="stylesheet" href="css/signup-page.css">
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container" style="width: 100% !important">
+    <div class="row" style="width: 100% !important">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sign Up</h5>
+            <form class="form-signin" action="/purchase">
+
+              <div class="form-label-group">
+                <input type="text" id="inputEmail" class="form-control" placeholder="Email address"  autofocus>
+                <label for="inputEmail">First Name</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="text" id="inputPassword" class="form-control" placeholder="Password" >
+                <label for="inputPassword">Last Name</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="text" id="inputPassword" class="form-control" placeholder="Password" >
+                <label for="inputPassword">Address</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="text" id="inputPassword" class="form-control" placeholder="Password" >
+                <label for="inputPassword">City</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="text" id="inputPassword" class="form-control" placeholder="Password" >
+                <label for="inputPassword">Zip Code</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="date" id="inputPassword" class="form-control" placeholder="Password" >
+                <label for="inputPassword">Birthday</label>
+              </div>
+
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Yes! Please send me deals, updates, giveaways and marketing</label>
+              </div>
+
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">I Agree to the Terms & Conditions and Private Policy</label>
+              </div>
+
+              <a href="/purchase"><button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" onclick="">Next</button></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>

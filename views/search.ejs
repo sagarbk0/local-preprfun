@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('layouts/header'); -%>
+  <body id="page-top"> <!--style="background: linear-gradient(to right, #0062E6, #33AEFF); font-color: white !important;"-->
+      <%- include('layouts/navbar'); -%>
+      
+      <!-- Services-->
+      <section class="page-section" id="services">
+          <div class="container">
+              <h2 class="text-center mt-0">Search</h2>
+              <p>Search our directory</p>
+              <input id="searchb" type="text" placeholder="Search"></input>
+              <button onClick='clickB()'>Search</button>
+          </div>
+      </section>
+  <p style="display: none;" id="uid"><%=promotions %></p>
+
+      <div style="text-align: center; margin-left: 50px; margin-right: 50px;" id="demo"></div>
+
+  <script>
+    var clientPromotions = document.getElementById('uid').innerHTML;
+    
+    var clientPromotionsArray = clientPromotions.split('}');
+    
+
+    function clickB() {
+    document.getElementById('demo').innerHTML = '';
+      for(var i=0; i<clientPromotionsArray.length; i++) {
+        var title = '<h2>' + clientPromotionsArray[i].slice(clientPromotionsArray[i].indexOf('title: ')+8,clientPromotionsArray[i].indexOf('body: ')-5)+'</h2>';
+        var description = '<p>' + clientPromotionsArray[i].slice(clientPromotionsArray[i].indexOf('body: ')+6,clientPromotionsArray[i].indexOf('business: ')-5)+'</p>';
+        var business = '<p>Posted by ' + clientPromotionsArray[i].slice(clientPromotionsArray[i].indexOf('business: ')+9,clientPromotionsArray[i].indexOf('__v: ')-5)+'</p><hr>';
+        
+        
+        if (title.indexOf(document.getElementById('searchb').value)!=-1) {
+        document.getElementById('demo').innerHTML += title;
+        document.getElementById('demo').innerHTML += description;
+        document.getElementById('demo').innerHTML += business;
+        }
+      }
+    }
+  </script>
+</html>
+
