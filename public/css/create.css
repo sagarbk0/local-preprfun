@@ -1,3 +1,16 @@
 #maincontent {
-  margin-top: 20vh;
+  margin-top: 25vh;
+ overflow: hidden;
+}
+.text-down{
+  margin-top: 45px;
+}
+
+.text-white{
+  color:#fff;
+}
+
+
+.background-purple{
+background-color: #5f4dee;
 }

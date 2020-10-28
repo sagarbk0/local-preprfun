@@ -3,26 +3,25 @@
     <%- include('layouts/header'); -%>
     <body id="page-top"> <!--style="background: linear-gradient(to right, #0062E6, #33AEFF); font-color: white !important;"-->
         <%- include('layouts/navbar'); -%>
-        
         <!-- Services-->
-        <section class="page-section" id="services">
+        <section class="page-section purchasesec" id="services">
             <div class="container">
                 <h2 class="text-center mt-0">Choose Your LOCALIST Membership</h2>
-                <p>Become a member today! Choose between a monthly or annual plan and start saving on multiple local businesses! As a Localist, members recieve many perks such as:</p>
+                <p>Become a member today! Choose between a monthly or annual plan and start saving on multiple local businesses! As a Localist, members receive many perks such as:</p>
                 <hr class="divider my-4" />
                 <div class="row">
                     <div class="col-lg-6 col-md-6 text-center">
                         <div class="mt-5">
                             <i class="fas fa-4x fa-gem text-primary mb-4"></i>
                             <h3 class="h4 mb-2">Monthly Plan</h3><h2 style="display: inline" class="h4 mb-2">$5</h2><p style="display: inline">per month</p><br>
-                            <button class="text-muted mb-0">Select</button>
+                            <a href="/purchase-monthly"><button class="text-muted mb-0">Select</button></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 text-center">
                         <div class="mt-5">
                             <i class="fas fa-4x fa-gem text-primary mb-4"></i>
                             <h3 class="h4 mb-2">Yearly Plan</h3><h2 style="display: inline" class="h4 mb-2">$50</h2><p style="display: inline">per year</p><br><p style="color: red;">Save 10%!</p>
-                            <button class="text-muted mb-0">Select</button>
+                            <a href="/purchase-yearly"><button class="text-muted mb-0">Select</button></a>
                         </div>
                     </div>
                 </div>

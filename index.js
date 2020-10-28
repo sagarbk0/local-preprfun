@@ -30,7 +30,7 @@ app.get('/sign-up',(req,res)=>{
   res.render('sign_up');
 })
 
-app.get('/sign-in',(req,res)=>{
+app.get('/login',(req,res)=>{
   res.render('sign_in');
 })
 
@@ -38,15 +38,15 @@ app.get('/sign-up-2',(req,res)=>{
   res.render('sign_up_2');
 })
 
-app.get('/purchase',(req,res)=>{
-  res.render('purchase');
+app.get('/shop',(req,res)=>{
+  res.render('shop');
 })
 
-app.get('/learn-more',(req,res)=>{
-  res.render('learn_more');
+app.get('/about',(req,res)=>{
+  res.render('about');
 })
 
-app.get('/new-post',(req,res)=>{
+app.get('/business-owners',(req,res)=>{
 res.render('create');
 })
 
@@ -84,4 +84,20 @@ app.get('/who-we-are',(req,res)=>{
 
 app.get('/how-does-it-work',(req,res)=>{
   res.render('how_does_it_work');
+})
+
+app.get('/purchase',(req,res)=>{
+  res.render('purchase');
+})
+
+app.get('/purchase',(req,res)=>{
+  res.render('purchase');
+})
+
+app.get('/purchase-monthly',(req,res)=>{
+  res.render('purchase_monthly');
+})
+
+app.get('/purchase-yearly',(req,res)=>{
+  res.render('purchase_yearly');
 })
